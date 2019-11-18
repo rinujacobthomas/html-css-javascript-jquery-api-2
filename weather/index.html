@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javaweather.js"></script>
+</head>
+<style>
+#citylabel
+{
+    font-size: 40px;
+}
+#citytext
+{
+    width: 15em;
+    height: 2em;
+    font-size: 26px;
+}
+#clickbut
+{
+    margin-top: 2em;
+    width: 5em;
+    height: 2em;
+}
+button
+{
+    border: none;
+    width: 2em;
+    height: 2em;
+    margin-left: 1em;
+}
+
+</style>
+<body>
+    <div style="text-align: center;">
+            <br><br><br><br>
+            <div id="citylabel">City</div>                      <!-- city name-->
+            <h3 id="dayandtime"></h3>                                            <!-- time-->
+            <div id="cloud"></div><img id="icon" src="" alt="">                      <!--cloud image-->
+            <br>
+            <button  id="cel">C</button>&nbsp;               <!-- buttons-->
+            <button  id="far">F</button>                      <!--""-->
+            <h1 id="valuelabel"></h1>                        <!--value-->
+        <br>
+        <input type="text" id="citytext" placeholder="city">
+        <br>
+        <h4 id="feedback"></h4>                              <!-- to print city not found-->
+        
+    </div>
+    
+</body>
+</html>
